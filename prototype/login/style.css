@@ -159,7 +159,7 @@ section .noi-dung .form .icon-dang-nhap li i{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 768px;
         height: 100%;
         z-index: 1;
     }
