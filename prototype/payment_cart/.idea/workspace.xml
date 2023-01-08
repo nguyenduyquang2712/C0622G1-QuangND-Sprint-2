@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab609285-2d2d-4ece-97be-53618815977c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../music_web/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/.idea/music_web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../music_web/music/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/payment_cart.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2K2PRCc35INisw56foAQdgC2O0x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab609285-2d2d-4ece-97be-53618815977c" name="Default Changelist" comment="" />
+      <created>1673169693403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673169693403</updated>
+      <workItem from="1673169694588" duration="2492000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

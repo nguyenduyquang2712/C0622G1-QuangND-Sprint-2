@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="feae098a-6318-49b8-8785-562b70237fdd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/music/src/assets/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/music_web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/music/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prototype/payment_cart/payment_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../prototype/payment_cart/payment_cart.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2K2ZXeRZD2ojoM8DtuehYUVsCur" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/music/src/assets" />
+    <property name="ts.external.directory.path" value="I:\Codegym_sprint_2\C0622G1-QuangND-Sprint-2\music_web\music\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\Codegym_sprint_2\C0622G1-QuangND-Sprint-2\music_web\music\src\assets" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="feae098a-6318-49b8-8785-562b70237fdd" name="Default Changelist" comment="" />
+      <created>1673174678700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673174678700</updated>
+      <workItem from="1673174679840" duration="5223000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="310" y="124" key="EditFileWatcherDialog" timestamp="1673177731426">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="310" y="124" key="EditFileWatcherDialog/0.0.1280.689@0.0.1280.689" timestamp="1673177731426" />
+  </component>
+</project>
