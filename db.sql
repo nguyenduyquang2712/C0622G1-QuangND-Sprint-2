@@ -72,6 +72,7 @@ primary key(id));
 create table song(
 id int auto_increment,
 title varchar(255),
+url text,
 `description` text,
 genre varchar(255),
 image text,
