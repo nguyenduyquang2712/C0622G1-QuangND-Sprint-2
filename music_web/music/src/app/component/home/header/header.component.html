@@ -7,7 +7,7 @@
         <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
           <!-- Nav brand -->
-          <a href="index.html" class="nav-brand"><img style="height: 100px; width: 1000px!important;" src="../../../assets/img/core-img/logoQuangND.png" alt=""></a>
+          <a routerLink="/" class="nav-brand"><img style="height: 60px" src="../../../assets/img/core-img/logoQuangND.png" alt=""></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -25,7 +25,7 @@
             <!-- Nav Start -->
             <div class="classynav">
               <ul>
-                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/">Home</a></li>
                 <li><a routerLink="/album">Albums</a></li>
                 <li><a href="#">Pages</a>
                   <!--                  <ul class="dropdown">-->
@@ -64,12 +64,12 @@
               <div class="login-register-cart-button d-flex align-items-center">
                 <!-- Login/Register -->
                 <div class="login-register-btn mr-50">
-                  <a href="login.html" id="loginBtn">Login / Register</a>
+                  <a routerLink="/login" id="loginBtn">Login / Register</a>
                 </div>
 
                 <!-- Cart Button -->
                 <div class="cart-btn">
-                  <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                  <p routerLink="/payment"><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
                 </div>
               </div>
             </div>

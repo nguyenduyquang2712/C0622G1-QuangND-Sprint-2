@@ -16,10 +16,57 @@ public class Account {
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
     @OneToMany(mappedBy = "account")
-    @JsonBackReference
     private Set<AccountRole> accountRoles;
     @OneToOne(mappedBy = "account")
-    @JsonBackReference
     private User user;
 
+    public Account() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getDeleteStatus() {
+        return deleteStatus;
+    }
+    public void setDeleteStatus(Integer deleteStatus) {
+        this.deleteStatus = deleteStatus;
+    }
+
+    public Set<AccountRole> getAccountRoles() {
+        return accountRoles;
+    }
+
+    public void setAccountRoles(Set<AccountRole> accountRoles) {
+        this.accountRoles = accountRoles;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

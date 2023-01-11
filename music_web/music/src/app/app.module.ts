@@ -10,6 +10,8 @@ import { AlbumComponent } from './component/album_store/album/album.component';
 import { DetailAlbumComponent } from './component/album_store/detail-album/detail-album.component';
 import { PaymentCartComponent } from './component/album_store/payment-cart/payment-cart.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './component/login/login/login.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -19,11 +21,16 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     FooterComponent,
     AlbumComponent,
     DetailAlbumComponent,
-    PaymentCartComponent
+    PaymentCartComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
