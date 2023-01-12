@@ -12,6 +12,8 @@ import { PaymentCartComponent } from './component/album_store/payment-cart/payme
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './component/login/login/login.component';
 import {HttpClientModule} from "@angular/common/http";
+import { UserComponent } from './component/user/user/user.component';
+import { PlayListComponent } from './component/user/play-list/play-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {HttpClientModule} from "@angular/common/http";
     AlbumComponent,
     DetailAlbumComponent,
     PaymentCartComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent,
+    PlayListComponent
   ],
   imports: [
     BrowserModule,

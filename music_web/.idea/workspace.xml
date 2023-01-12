@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feae098a-6318-49b8-8785-562b70237fdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/home/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/footer/footer.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/home/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,9 @@
       <workItem from="1673174679840" duration="5223000" />
       <workItem from="1673360307137" duration="914000" />
       <workItem from="1673361458414" duration="386000" />
-      <workItem from="1673400344447" duration="4674000" />
+      <workItem from="1673400344447" duration="6903000" />
+      <workItem from="1673487768604" duration="830000" />
+      <workItem from="1673492227108" duration="5197000" />
     </task>
     <servers />
   </component>
@@ -84,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="310" y="124" key="EditFileWatcherDialog" timestamp="1673177731426">
@@ -94,6 +97,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1673360767276" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1673496673856">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1280.689@0.0.1280.689" timestamp="1673496673856" />
     <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1673410793833">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

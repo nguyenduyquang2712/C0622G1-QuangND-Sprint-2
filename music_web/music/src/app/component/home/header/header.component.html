@@ -27,7 +27,9 @@
               <ul>
                 <li><a routerLink="/">Home</a></li>
                 <li><a routerLink="/album">Albums</a></li>
-                <li><a href="#">Pages</a>
+                <li *ngIf="checklogin && checkrole==0"><a routerLink="/playlist">Playlist</a></li>
+                <li *ngIf="checklogin && checkrole==1"><a routerLink="/user">User</a></li>
+
                   <!--                  <ul class="dropdown">-->
                   <!--                    <li><a href="index.html">Home</a></li>-->
                   <!--                    <li><a href="albums-store.html">Albums</a></li>-->
@@ -54,23 +56,27 @@
                   <!--                      </ul>-->
                   <!--                    </li>-->
                   <!--                  </ul>-->
-                </li>
                 <li><a href="event.html">Events</a></li>
-                <li><a href="blog.html">News</a></li>
+                <li><a href="blog.html">Guide</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
 
               <!-- Login/Register & Cart Button -->
               <div class="login-register-cart-button d-flex align-items-center">
                 <!-- Login/Register -->
+                <div *ngIf="checklogin && checkrole==0" class="cart-btn">
+                  <p routerLink="/payment"><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                </div>
                 <div class="login-register-btn mr-50">
-                  <a routerLink="/login" id="loginBtn">Login / Register</a>
+                  <a *ngIf="!checklogin" routerLink="/login" id="loginBtn">Login / Register</a>
+                </div>
+
+                <div class="login-register-btn mr-50">
+                  <a *ngIf="checklogin" (click)="logOut()">Log Out</a>
                 </div>
 
                 <!-- Cart Button -->
-                <div class="cart-btn">
-                  <p routerLink="/payment"><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
-                </div>
+
               </div>
             </div>
             <!-- Nav End -->

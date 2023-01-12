@@ -4,6 +4,9 @@ import {HomeComponent} from "./component/home/home/home.component";
 import {AlbumComponent} from "./component/album_store/album/album.component";
 import {PaymentCartComponent} from "./component/album_store/payment-cart/payment-cart.component";
 import {LoginComponent} from "./component/login/login/login.component";
+import {UserComponent} from "./component/user/user/user.component";
+import {AdminGuard} from "./security/guard/admin.guard";
+import {UserGuard} from "./security/guard/user.guard";
 
 
 const routes: Routes = [
@@ -18,6 +21,12 @@ const routes: Routes = [
   },
   {
     path:'login', component:LoginComponent
+  },
+  {
+    path:'user', component:UserComponent, canActivate: [AdminGuard]
+  },
+  {
+    path:'playlist', component:UserComponent, canActivate: [UserGuard]
   }
 ];
 
