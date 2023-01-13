@@ -1,5 +1,7 @@
 package com.codegym.model.album;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -12,6 +14,7 @@ public class Artist {
     private String desciption;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonManagedReference
     @OneToMany(mappedBy = "artist")
     private Set<Album> albums;
 

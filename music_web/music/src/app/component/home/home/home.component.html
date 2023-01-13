@@ -426,12 +426,12 @@
           </div>
 
           <!-- Single Top Item -->
-          <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
+          <div *ngIf="albums" class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
             <div class="thumbnail">
-              <img src="../../../../assets/img/bg-img/wt1.jpg" height="100" width="100"/></div>
+              <img src="{{albums.images[0].urlImage}}" height="100" width="100"/></div>
             <div class="content-">
-              <h6>Sam Smith</h6>
-              <p>Underground</p>
+              <h6>{{albums.title}}</h6>
+              <p>{{albums.genre}}</p>
             </div>
           </div>
 

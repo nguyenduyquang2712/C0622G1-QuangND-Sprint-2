@@ -1,5 +1,7 @@
 package com.codegym.model.album;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -11,6 +13,7 @@ public class TypeAlbum {
     private String type;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonManagedReference
     @OneToMany(mappedBy = "typeAlbum")
     private Set<Album> albums;
 

@@ -2,6 +2,8 @@ package com.codegym.model.album;
 
 import com.codegym.model.payment.OrderAlbum;
 import com.codegym.model.song.Song;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -21,16 +23,21 @@ public class Album {
     private Integer instock_status;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "artist_id", referencedColumnName = "id")
     private Artist artist;
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "type_id", referencedColumnName = "id")
     private TypeAlbum typeAlbum;
+    @JsonManagedReference
     @OneToMany(mappedBy = "album")
     private Set<ImageAlbum> images;
+    @JsonManagedReference
     @OneToMany(mappedBy = "album")
     private Set<Song> songs;
+    @JsonManagedReference
     @OneToMany(mappedBy = "album")
     private Set<OrderAlbum>orderAlbums;
 

@@ -1,5 +1,7 @@
 package com.codegym.model.album;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,6 +12,7 @@ public class ImageAlbum {
     private String urlImage;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "album_id",referencedColumnName = "id")
     private Album album;

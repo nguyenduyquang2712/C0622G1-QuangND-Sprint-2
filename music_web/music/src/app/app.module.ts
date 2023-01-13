@@ -33,8 +33,7 @@ import { PlayListComponent } from './component/user/play-list/play-list.componen
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
