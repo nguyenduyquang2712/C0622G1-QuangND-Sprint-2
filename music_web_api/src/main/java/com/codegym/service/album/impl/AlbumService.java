@@ -20,7 +20,7 @@ public class AlbumService implements IAlbumService {
     }
 
     @Override
-    public Page<Album> getAllAlbums(Pageable pageable) {
-        return albumReporitory.findAll(pageable);
+    public Page<Album> getAllAlbums(Pageable pageable, String nameAlbum) {
+        return albumReporitory.findAll( nameAlbum, pageable);
     }
 }

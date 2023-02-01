@@ -9,11 +9,12 @@ import {Album} from "../../../model/album/album";
 })
 export class AlbumComponent implements OnInit {
   albums: Album[] ;
+  nameAlbum: string='';
   pageData: any;
   constructor(private _albumService: AlbumService) { }
 
   ngOnInit(): void {
-    this._albumService.getAllAlbum(0).subscribe(data=>{
+    this._albumService.getAllAlbum(0,this.nameAlbum).subscribe(data=>{
     this.albums = data.content;
     this.pageData= data;
     console.log(data.totalPages)
@@ -23,11 +24,16 @@ export class AlbumComponent implements OnInit {
 
 
   goToPage(i: number) {
-    this._albumService.getAllAlbum(i).subscribe(
+    this._albumService.getAllAlbum(i,this.nameAlbum).subscribe(
       data => {
         this.albums = data.content;
         this.pageData= data;
         console.log(data.content)
       });
+  }
+
+  findAlbum(value: string) {
+    this.nameAlbum=value;
+    this.ngOnInit()
   }
 }

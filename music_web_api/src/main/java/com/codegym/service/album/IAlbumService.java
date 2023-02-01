@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface IAlbumService {
     List<Album> getAllAlbums();
-    Page<Album> getAllAlbums(Pageable pageable);
+    Page<Album> getAllAlbums(Pageable pageable, String nameAlbum);
 }

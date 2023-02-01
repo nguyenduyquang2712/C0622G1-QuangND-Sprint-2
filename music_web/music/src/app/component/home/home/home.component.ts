@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private _albumService: AlbumService) { }
 
   ngOnInit(): void {
-    this._albumService.getAllAlbum().subscribe(data=>{
+    this._albumService.getAllAlbum(0,'').subscribe(data=>{
       this.albums = data[0];
       console.log(data[0])
     })

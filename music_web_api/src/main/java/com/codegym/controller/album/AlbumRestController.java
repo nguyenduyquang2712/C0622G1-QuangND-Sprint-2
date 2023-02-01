@@ -8,10 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,8 +29,8 @@ public class AlbumRestController {
 //        return new ResponseEntity<>(albums, HttpStatus.OK);
 //    }
     @GetMapping()
-    public ResponseEntity<Page<Album>> getAlbums(@PageableDefault(value = 6)Pageable pageable) {
-        Page<Album> albums = albumService.getAllAlbums(pageable);
+    public ResponseEntity<Page<Album>> getAlbums(@PageableDefault(value = 6)Pageable pageable, @RequestParam String name) {
+        Page<Album> albums = albumService.getAllAlbums(pageable, name);
         if (albums.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }

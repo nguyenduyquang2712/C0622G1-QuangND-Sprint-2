@@ -10,36 +10,20 @@
 <section class="album-catagory section-padding-100-0">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
-          <a href="#" data-filter="*">Browse All</a>
-          <a href="#" data-filter=".a">A</a>
-          <a href="#" data-filter=".b">B</a>
-          <a href="#" data-filter=".c">C</a>
-          <a href="#" data-filter=".d">D</a>
-          <a href="#" data-filter=".e">E</a>
-          <a href="#" data-filter=".f">F</a>
-          <a href="#" data-filter=".g">G</a>
-          <a href="#" data-filter=".h">H</a>
-          <a href="#" data-filter=".i">I</a>
-          <a href="#" data-filter=".j">J</a>
-          <a href="#" data-filter=".k">K</a>
-          <a href="#" data-filter=".l">L</a>
-          <a href="#" data-filter=".m">M</a>
-          <a href="#" data-filter=".n">N</a>
-          <a href="#" data-filter=".o">O</a>
-          <a href="#" data-filter=".p">P</a>
-          <a href="#" data-filter=".q">Q</a>
-          <a href="#" data-filter=".r">R</a>
-          <a href="#" data-filter=".s">S</a>
-          <a href="#" data-filter=".t">T</a>
-          <a href="#" data-filter=".u">U</a>
-          <a href="#" data-filter=".v">V</a>
-          <a href="#" data-filter=".w">W</a>
-          <a href="#" data-filter=".x">X</a>
-          <a href="#" data-filter=".y">Y</a>
-          <a href="#" data-filter=".z">Z</a>
-          <a href="#" data-filter=".number">0-9</a>
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-md-12 pb-4 d-flex">
+            <input #nameAlbum type="text" style="width: 50%" class="form-control mx-3" placeholder="Tìm tên album ?...">
+            <select class="form-control me-3" style="width: 30%">
+              <option hidden>Thể loại</option>
+              <option>Pop</option>
+              <option>Ballad</option>
+              <option>Rock</option>
+            </select>
+
+            <button type="submit" class="btn btn-outline-success" style="font-weight: bold" (click)="findAlbum(nameAlbum.value)">Tìm Kiếm</button>
+          </div>
+
         </div>
       </div>
     </div>
