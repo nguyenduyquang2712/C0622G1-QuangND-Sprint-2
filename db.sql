@@ -116,3 +116,18 @@ foreign key(album_id) references album(id),
 quantity int,
 delete_status int default 0,
 primary key(id));
+INSERT INTO `music_web_v4`.`type_album` (`id`, `delete_status`, `type`) VALUES ('1', '0', 'Đĩa CD');
+INSERT INTO `music_web_v4`.`type_album` (`id`, `delete_status`, `type`) VALUES ('2', '0', 'Link tải');
+INSERT INTO `music_web_v4`.`type_album` (`id`, `delete_status`, `type`) VALUES ('3', '0', 'Đĩa than');
+
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `type_id`) VALUES ('2', '0', 'Nhiều nghệ sĩ', 'ballad', '1', '200000', '2023-01-15', 'Ballad Việt ', '2');
+
+INSERT INTO `music_web_v4`.`artist` (`id`, `delete_status`, `desciption`, `name`) VALUES ('1', '0', 'ca sĩ tự do', 'Bùi Trường Linh');
+INSERT INTO `music_web_v4`.`artist` (`id`, `delete_status`, `desciption`, `name`) VALUES ('2', '0', 'ca sĩ, nhạc sĩ tự do', 'Bùi Công Nam');
+
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('4', '0', ' Nhạc Tết ', 'pop', '1', '200000', '2022-12-09', 'Tuyển Tập Nhạc Tết Bùi Công Nam', '2', '2');
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('5', '0', 'loopsmusic', 'ballad', '1', '250000', '2022-11-11', 'Vọng (EP) ', '1', '1');
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('6', '0', 'Live in giao lộ thời gian', 'ballad', '1', '300000', '2022-09-09', 'Giao Lộ Thời Gian (Tập 2) ', '1', '1');
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('8', '0', 'sonymusic', 'pop', '1', '300000', '2022-08-09', 'TikTok Songs: Pop Hits 2022', '1', '1');
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('9', '0', 'sonymusic', 'pop', '1', '150000', '2022-05-09', 'TikTok Viral Throwbacks ', '1', '2');
+INSERT INTO `music_web_v4`.`album` (`id`, `delete_status`, `description`, `genre`, `instock_status`, `price`, `release_date`, `title`, `artist_id`, `type_id`) VALUES ('10', '0', 'warner_music', 'pop', '1', '100000', '2022-12-12', 'New Years Eve Party At Home ', '1', '2');

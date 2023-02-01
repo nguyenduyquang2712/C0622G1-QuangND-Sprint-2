@@ -8,14 +8,26 @@ import {Album} from "../../../model/album/album";
   styleUrls: ['./album.component.css']
 })
 export class AlbumComponent implements OnInit {
-  albums: Album ;
+  albums: Album[] ;
+  pageData: any;
   constructor(private _albumService: AlbumService) { }
 
   ngOnInit(): void {
-    this._albumService.getAllAlbum().subscribe(data=>{
-    this.albums = data;
-    console.log(data)
+    this._albumService.getAllAlbum(0).subscribe(data=>{
+    this.albums = data.content;
+    this.pageData= data;
+    console.log(data.totalPages)
   })
   }
 
+
+
+  goToPage(i: number) {
+    this._albumService.getAllAlbum(i).subscribe(
+      data => {
+        this.albums = data.content;
+        this.pageData= data;
+        console.log(data.content)
+      });
+  }
 }

@@ -11,7 +11,7 @@ export class AlbumService {
   constructor(private _httpClient: HttpClient) {
   }
 
-  getAllAlbum(): Observable<Album> {
-    return this._httpClient.get<Album>('http://localhost:8080/api/v1/music');
+  getAllAlbum(pageNumber: number): Observable<any> {
+    return this._httpClient.get('http://localhost:8080/api/v1/music'+'?page=' + pageNumber);
   }
 }

@@ -5,6 +5,7 @@ export interface Album {
   title?:string;
   price?:number;
   genre?: string;
+  description?:string;
   releaseDate?: string;
   instock_status?: number;
   deleteStatus?: number;

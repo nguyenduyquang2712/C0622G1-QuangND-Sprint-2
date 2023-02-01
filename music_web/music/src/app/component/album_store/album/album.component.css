@@ -1,0 +1,72 @@
+.nothing-product{
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
+  color: #59ab6e;
+  font-size: 28px;
+  margin-top: 16px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.my__pagination{
+  display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.my__page-item {
+  margin: 0 4px;
+  border-radius: 4px;
+  display: block;
+  padding: 2px 16px;
+  list-style: none;
+  border: 1px solid #59ab6e;
+
+}
+.my__page-item:hover {
+  color: white;
+  background-color: #59ab6e;
+  cursor: pointer;
+  transition: background-color, 0.5s;
+}
+.my__active {
+  background-color: #59ab6e;
+  color: whitesmoke;
+}
+.my__page-link {
+  font-weight: bold;
+
+}
+.page-link {
+  font-size: 16px;
+  border: none;
+  color: black;
+  background-color: transparent;
+}
+
+.my__page-item.actived {
+  color: white;
+  background-color: #59ab6e;
+}
+.product__price::first-letter {
+  right: 200px;
+  margin-right: 8px;
+}
+.currency__title::first-letter {
+  color: transparent;
+}
+.nothing-auction {
+  text-align: center;
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
+  color: #59ab6e;
+  font-size: 28px;
+  margin-top: 16px;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.disabled {
+  opacity: 0.7;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
