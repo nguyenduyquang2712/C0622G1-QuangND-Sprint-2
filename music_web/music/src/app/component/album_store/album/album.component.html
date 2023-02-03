@@ -13,7 +13,7 @@
       <div class="col-lg-9">
         <div class="row">
           <div class="col-md-12 pb-4 d-flex">
-            <input #nameAlbum type="text" style="width: 50%" class="form-control mx-3" placeholder="Tìm tên album ?...">
+            <input #nameAlbum type="text" style="width: 50%" class="form-control mx-3" placeholder="Tìm tên album ?..." (keyup.enter)="findAlbum(nameAlbum.value)">
             <select class="form-control me-3" style="width: 30%">
               <option hidden>Thể loại</option>
               <option>Pop</option>
@@ -35,7 +35,7 @@
         <div class="single-album">
           <img src="{{item.images[0].urlImage}}" alt="">
           <div class="album-info">
-            <a href="#">
+            <a [routerLink]="['/detail',item.id]">
               <h5>{{item.title}}</h5>
             </a>
             <p>{{item.description}}</p>

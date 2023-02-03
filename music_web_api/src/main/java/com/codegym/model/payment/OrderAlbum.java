@@ -1,6 +1,8 @@
 package com.codegym.model.payment;
 
 import com.codegym.model.album.Album;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 
@@ -12,11 +14,13 @@ public class OrderAlbum {
     private Integer quantity;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonManagedReference
     @ManyToOne
-    @JoinColumn(name = "payment_id",referencedColumnName = "id")
+    @JoinColumn(name = "payment_id", referencedColumnName = "id")
     private Payment payment;
+    @JsonManagedReference
     @ManyToOne
-    @JoinColumn(name = "album_id",referencedColumnName = "id")
+    @JoinColumn(name = "album_id", referencedColumnName = "id")
     private Album album;
 
     public OrderAlbum() {

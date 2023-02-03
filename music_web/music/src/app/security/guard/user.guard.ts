@@ -29,7 +29,7 @@ export class UserGuard implements CanActivate {
 
     } else {
       console.log("dang nhap vo")
-      this.route.navigateByUrl('/');
+      this.route.navigateByUrl('/login');
     }
   }
 

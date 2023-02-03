@@ -1,6 +1,8 @@
 package com.codegym.model.payment;
 
 import com.codegym.model.user.User;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
@@ -16,9 +18,11 @@ public class Payment {
     private Integer paymentStatus;
     @Column(columnDefinition = "int default 0")
     private Integer deleteStatus;
+    @JsonBackReference
     @ManyToOne
-    @JoinColumn(name = "user_id",referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+    @JsonBackReference
     @OneToMany(mappedBy = "payment")
     private Set<OrderAlbum> orderAlbums;
 

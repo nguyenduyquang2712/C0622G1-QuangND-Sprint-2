@@ -1,26 +1,26 @@
-<div class="container">
+<div class="container" style="margin-top: 100px">
   <div class="card">
     <div class="container-fliud">
       <div class="wrapper row">
         <div class="preview col-md-6">
 
           <div class="preview-pic tab-content">
-            <div class="tab-pane active" id="pic-1"><img src="https://i.ebayimg.com/images/g/bzYAAOSwEu5jY9SB/s-l500.jpg" /></div>
-            <div class="tab-pane" id="pic-2"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></div>
-            <div class="tab-pane" id="pic-3"><img src="https://i.ebayimg.com/images/g/t5kAAOSwX9NjY9SB/s-l64.jpg" /></div>
-            <div class="tab-pane" id="pic-4"><img src="https://i.ebayimg.com/images/g/FVwAAOSwZhFjJKH1/s-l64.jpg" /></div>
-            <div class="tab-pane" id="pic-5"><img src="https://i.ebayimg.com/images/g/r4sAAOSwe-NjJKH3/s-l64.jpg" /></div>
+            <div  class="tab-pane active" id="pic-1" style="width: 250px"><img style="margin-left: 100px" src="{{album?.images[0]?.urlImage}}" /></div>
+<!--            <div class="tab-pane" id="pic-2"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></div>-->
+<!--            <div class="tab-pane" id="pic-3"><img src="https://i.ebayimg.com/images/g/t5kAAOSwX9NjY9SB/s-l64.jpg" /></div>-->
+<!--            <div class="tab-pane" id="pic-4"><img src="https://i.ebayimg.com/images/g/FVwAAOSwZhFjJKH1/s-l64.jpg" /></div>-->
+<!--            <div class="tab-pane" id="pic-5"><img src="https://i.ebayimg.com/images/g/r4sAAOSwe-NjJKH3/s-l64.jpg" /></div>-->
           </div>
-          <ul class="preview-thumbnail nav nav-tabs">
-            <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></a></li>
-            <li><a data-target="#pic-2" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/bzYAAOSwEu5jY9SB/s-l64.jpg" /></a></li>
-            <li><a data-target="#pic-3" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></a></li>
-            <li><a data-target="#pic-4" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/t5kAAOSwX9NjY9SB/s-l64.jpg" /></a></li>
-          </ul>
+<!--          <ul class="preview-thumbnail nav nav-tabs">-->
+<!--            <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></a></li>-->
+<!--            <li><a data-target="#pic-2" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/bzYAAOSwEu5jY9SB/s-l64.jpg" /></a></li>-->
+<!--            <li><a data-target="#pic-3" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/mF4AAOSwM3tjY9SB/s-l64.jpg" /></a></li>-->
+<!--            <li><a data-target="#pic-4" data-toggle="tab"><img src="https://i.ebayimg.com/images/g/t5kAAOSwX9NjY9SB/s-l64.jpg" /></a></li>-->
+<!--          </ul>-->
 
         </div>
         <div class="details col-md-6">
-          <h3 class="product-title">Panini Golden Album 2022 World Cup Qatar Empty Hardcover FIFA WC Gold Edition</h3>
+          <h3 class="product-title">{{album?.title}}</h3>
           <div class="rating">
             <div class="stars">
               <span class="fa fa-star checked"></span>
@@ -31,22 +31,16 @@
             </div>
             <span class="review-no">41 reviews</span>
           </div>
-          <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-          <h4 class="price">current price: <span>$180</span></h4>
+          <p class="product-description">{{album?.description}}</p>
+          <h4 class="price">current price: <span>{{album?.price}} VND</span></h4>
           <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
-          <h5 class="sizes">types:
-            <span class="size" data-toggle="tooltip" title="small">Pop</span>
-            <span class="size" data-toggle="tooltip" title="medium">Rock</span>
-            <!--                        <span class="size" data-toggle="tooltip" title="large">l</span>-->
-            <!--                        <span class="size" data-toggle="tooltip" title="xtra large">xl</span>-->
-          </h5>
-          <h5 class="colors">colors:
-            <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
-            <span class="color green"></span>
-            <span class="color blue"></span>
+          <h5 class="sizes">types: {{album?.genre}}
+<!--            <span class="size" data-toggle="tooltip" title="small">{{album.genre}}</span>-->
+<!--                                    <span class="size" data-toggle="tooltip" title="large">l</span>-->
+<!--                                    <span class="size" data-toggle="tooltip" title="xtra large">xl</span>-->
           </h5>
           <div class="action">
-            <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+            <button [routerLink]="['/payment',album?.id]" class="add-to-cart btn btn-default" type="button">add to cart</button>
             <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
           </div>
         </div>

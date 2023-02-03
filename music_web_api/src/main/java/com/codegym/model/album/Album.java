@@ -37,9 +37,9 @@ public class Album {
     @JsonManagedReference
     @OneToMany(mappedBy = "album")
     private Set<Song> songs;
-    @JsonManagedReference
+    @JsonBackReference
     @OneToMany(mappedBy = "album")
-    private Set<OrderAlbum>orderAlbums;
+    private Set<OrderAlbum> orderAlbums;
 
     public Album() {
     }

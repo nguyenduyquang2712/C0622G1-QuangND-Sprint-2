@@ -4,6 +4,7 @@ import com.codegym.model.account.Account;
 import com.codegym.model.payment.Payment;
 import com.codegym.model.song.PlayList;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -29,6 +30,7 @@ public class User {
     private Account account;
     @OneToOne(mappedBy = "user")
     private PlayList playList;
+    @JsonManagedReference
     @OneToMany(mappedBy = "user")
     private Set<Payment> payments;
 
