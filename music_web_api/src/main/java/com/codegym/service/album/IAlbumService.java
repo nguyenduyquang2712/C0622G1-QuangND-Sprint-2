@@ -2,6 +2,7 @@ package com.codegym.service.album;
 
 import com.codegym.model.album.Album;
 import com.codegym.model.payment.OrderAlbum;
+import com.codegym.model.payment.Payment;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -15,5 +16,7 @@ public interface IAlbumService {
 
     List<OrderAlbum> getOrderAlbumById(int userId);
 
-    void addOrderAlbum(Integer paramElement);
+    void addOrderAlbum(Integer id, Integer paymentId);
+
+    Payment findPaymentId(Integer userId);
 }

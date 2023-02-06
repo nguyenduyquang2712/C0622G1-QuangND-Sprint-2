@@ -18,7 +18,7 @@ const routes: Routes = [
     path:'album',component:AlbumComponent
   },
   {
-    path:'payment/:id',component:PaymentCartComponent, canActivate: [UserGuard]
+    path:'payment',component:PaymentCartComponent, canActivate: [UserGuard]
   },
   {
     path:'login', component:LoginComponent

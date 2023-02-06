@@ -2,6 +2,7 @@ package com.codegym.controller.album;
 
 import com.codegym.model.album.Album;
 import com.codegym.model.payment.OrderAlbum;
+import com.codegym.model.payment.Payment;
 import com.codegym.service.album.IAlbumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -45,9 +46,12 @@ public class AlbumRestController {
     public ResponseEntity<List<OrderAlbum>> getOrderAlbum(@PathVariable int userId){
         return new ResponseEntity<>(albumService.getOrderAlbumById(userId), HttpStatus.OK);
     }
-    @GetMapping("add/{paramElement}")
-    public ResponseEntity <?> addOrderAlbum(@PathVariable Integer paramElement) {
-        albumService.addOrderAlbum(paramElement);
+    @GetMapping("add")
+    public ResponseEntity <?> addOrderAlbum(@RequestParam("id") Integer id, @RequestParam("userId") Integer userId) {
+       Payment payment = albumService.findPaymentId(userId);
+       if(payment!=null){
+           albumService.addOrderAlbum(id, payment.getId());
+       }
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

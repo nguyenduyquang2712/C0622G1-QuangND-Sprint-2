@@ -3,6 +3,7 @@ import {TokenService} from "../../../service/security/token.service";
 import {ActivatedRoute, Params, Router} from "@angular/router";
 import {User} from "../../../model/user/user";
 import {AlbumService} from "../../../service/album/album.service";
+import { render } from 'creditcardpayments/creditCardPayments';
 
 @Component({
   selector: 'app-payment-cart',
@@ -16,19 +17,25 @@ export class PaymentCartComponent implements OnInit {
   constructor(private _tokenService: TokenService,
               private _router: Router,
               private _albumService: AlbumService,
-              private _activatedRoute: ActivatedRoute) { }
+              private _activatedRoute: ActivatedRoute) {
+
+  }
 
   ngOnInit(): void {
+    render(
+      {
+        id: "#myPaypalButtons",
+        currency: "USD",
+        value: "100.00",
+        onApprove: (details)=>{
+          alert("Transaction Successfull")
+        }
+
+      }
+    )
     if (this._tokenService.isLogged()) {
       this.currentUser = JSON.parse(this._tokenService.getUser());
     }
-      this._activatedRoute.params.subscribe((param:Params)=>{
-        if(param["id"]!=''){
-          this._albumService.test(param["id"]).subscribe(data=>{
-            console.log(data)
-          })
-        }
-      })
       this._albumService.getOrderAlbumByUserID(this.currentUser.id).subscribe(data=>{
         this.orderAlbum = data;
         for (let i = 0; i < data.length ; i++) {

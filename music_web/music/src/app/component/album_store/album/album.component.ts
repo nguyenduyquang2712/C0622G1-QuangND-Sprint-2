@@ -17,7 +17,7 @@ export class AlbumComponent implements OnInit {
     this._albumService.getAllAlbum(0,this.nameAlbum).subscribe(data=>{
     this.albums = data.content;
     this.pageData= data;
-    console.log(data.totalPages)
+      console.log(data.content)
   })
   }
 

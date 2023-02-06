@@ -2,8 +2,10 @@ package com.codegym.service.album.impl;
 
 import com.codegym.model.album.Album;
 import com.codegym.model.payment.OrderAlbum;
+import com.codegym.model.payment.Payment;
 import com.codegym.repository.album.IAlbumReporitory;
 import com.codegym.repository.payment.IOrderAlbumRepository;
+import com.codegym.repository.payment.IPaymentRepository;
 import com.codegym.service.album.IAlbumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +20,8 @@ public class AlbumService implements IAlbumService {
     private IAlbumReporitory albumReporitory;
     @Autowired
     private IOrderAlbumRepository orderAlbumRepository;
+    @Autowired
+    private IPaymentRepository paymentRepository;
     @Override
     public List<Album> getAllAlbums() {
         return albumReporitory.findAll();
@@ -39,7 +43,12 @@ public class AlbumService implements IAlbumService {
     }
 
     @Override
-    public void addOrderAlbum(Integer paramElement) {
-        orderAlbumRepository.addOrderAlbum(paramElement);
+    public void addOrderAlbum(Integer id, Integer paymentId) {
+        orderAlbumRepository.addOrderAlbum(id, paymentId);
+    }
+
+    @Override
+    public Payment findPaymentId(Integer userId) {
+        return paymentRepository.findPaymentId(userId);
     }
 }

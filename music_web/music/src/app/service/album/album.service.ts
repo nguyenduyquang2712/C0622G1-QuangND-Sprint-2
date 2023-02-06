@@ -18,11 +18,15 @@ export class AlbumService {
     return this._httpClient.get<Album>('http://localhost:8080/api/v1/music/'+id);
   }
   getOrderAlbumByUserID(userId: number): Observable<any>{
-    return this._httpClient.get('http://localhost:8080/api/v1/music/orderAlbum/'+userId)
+    return this._httpClient.get('http://localhost:8080/api/v1/music/orderAlbum/'+userId);
   }
 
   test(paramElement: number):Observable<void> {
     return this._httpClient.get<void>('http://localhost:8080/api/v1/music/add/'+paramElement)
 
+  }
+
+  addAlbumToCart(id: number, userId: number): Observable<void> {
+    return this._httpClient.get<void>('http://localhost:8080/api/v1/music/add/?id='+id+'&userId='+userId);
   }
 }

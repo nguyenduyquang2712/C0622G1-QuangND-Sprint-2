@@ -65,12 +65,14 @@
               <div class="login-register-cart-button d-flex align-items-center">
                 <!-- Login/Register -->
                 <div *ngIf="checklogin && checkrole==0" class="cart-btn">
-                  <p [routerLink]="['/payment','']"><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                  <p routerLink="/payment"><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
                 </div>
                 <div class="login-register-btn mr-50">
                   <a *ngIf="!checklogin" routerLink="/login" id="loginBtn">Login / Register</a>
                 </div>
-
+                <div class="login-register-btn mr-50">
+                  <a *ngIf="checklogin" >{{userName}}</a>
+                </div>
                 <div class="login-register-btn mr-50">
                   <a *ngIf="checklogin" (click)="logOut()">Log Out</a>
                 </div>

@@ -1,4 +1,4 @@
-.nothing-product{
+.nothing-product {
   text-align: center;
   font-family: 'roboto', sans-serif;
   font-weight: 500;
@@ -8,11 +8,13 @@
   width: 100%;
   text-transform: capitalize;
 }
-.my__pagination{
+
+.my__pagination {
   display: flex;
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .my__page-item {
   margin: 0 4px;
   border-radius: 4px;
@@ -22,20 +24,24 @@
   border: 1px solid #59ab6e;
 
 }
+
 .my__page-item:hover {
   color: white;
   background-color: #59ab6e;
   cursor: pointer;
   transition: background-color, 0.5s;
 }
+
 .my__active {
   background-color: #59ab6e;
   color: whitesmoke;
 }
+
 .my__page-link {
   font-weight: bold;
 
 }
+
 .page-link {
   font-size: 16px;
   border: none;
@@ -47,13 +53,16 @@
   color: white;
   background-color: #59ab6e;
 }
+
 .product__price::first-letter {
   right: 200px;
   margin-right: 8px;
 }
+
 .currency__title::first-letter {
   color: transparent;
 }
+
 .nothing-auction {
   text-align: center;
   font-family: 'roboto', sans-serif;
@@ -70,3 +79,93 @@
   border: 1px solid lightgray;
   border-radius: 4px;
 }
+
+.single-album__adding-detail {
+  width: 120px;
+  height: 30px;
+  top: 45px;
+  left: 19px;
+  background-color: #080840;
+  z-index: 3;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  animation: fadeIn ease 0.25s;
+}
+
+.adding-detail__quantity {
+  width: 100%;
+  min-height: 67px;
+  background-color: white;
+  position: absolute;
+  top: 106%;
+  left: 0%;
+  border-radius: 3px;
+}
+
+.quantity-detail__number {
+  padding: 0 12px;
+  color: black;
+}
+
+.adding-detail__quantity-detail {
+  display: flex;
+  justify-content: center;
+  padding: 9px 6px;
+}
+
+.adding-detail__quantity {
+  display: none;
+  flex-direction: column;
+  cursor: default;
+  animation: fadeIn ease 0.25s;
+}
+
+.adding-detail__quantity-button {
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: #080840;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quantity-detail__icon {
+  color: black;
+  border: 1px solid black;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+.single-album-item:hover .single-album__adding-detail {
+  display: flex;
+}
+
+.single-album__adding-detail:hover .adding-detail__quantity {
+  display: flex;
+}
+
+.single-album__adding-detail span {
+  padding: 6px;
+}
+
+
+
+
+

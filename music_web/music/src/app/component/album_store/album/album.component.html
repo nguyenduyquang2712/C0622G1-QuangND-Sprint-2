@@ -13,7 +13,8 @@
       <div class="col-lg-9">
         <div class="row">
           <div class="col-md-12 pb-4 d-flex">
-            <input #nameAlbum type="text" style="width: 50%" class="form-control mx-3" placeholder="Tìm tên album ?..." (keyup.enter)="findAlbum(nameAlbum.value)">
+            <input #nameAlbum type="text" style="width: 50%" class="form-control mx-3" placeholder="Tìm tên album ?..."
+                   (keyup.enter)="findAlbum(nameAlbum.value)">
             <select class="form-control me-3" style="width: 30%">
               <option hidden>Thể loại</option>
               <option>Pop</option>
@@ -21,7 +22,9 @@
               <option>Rock</option>
             </select>
 
-            <button type="submit" class="btn btn-outline-success" style="font-weight: bold" (click)="findAlbum(nameAlbum.value)">Tìm Kiếm</button>
+            <button type="submit" class="btn btn-outline-success" style="font-weight: bold"
+                    (click)="findAlbum(nameAlbum.value)">Tìm Kiếm
+            </button>
           </div>
 
         </div>
@@ -33,6 +36,22 @@
       <!-- Single Album -->
       <div *ngFor="let item of albums" class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
         <div class="single-album">
+          <div class="single-album__adding-detail">
+            <span>Thêm vào giỏ hàng</span>
+            <div class="adding-detail__quantity">
+              <div class="adding-detail__quantity-detail">
+                <div class="quantity-detail__icon">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="quantity-detail__number">3</div>
+                <div class="quantity-detail__icon">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <button class="adding-detail__quantity-button">Thêm</button>
+            </div>
+          </div>
+
           <img src="{{item.images[0].urlImage}}" alt="">
           <div class="album-info">
             <a [routerLink]="['/detail',item.id]">
@@ -51,7 +70,7 @@
   <nav aria-label="Page navigation example" class="d-flex justify-content-end">
     <ul class="my__pagination" *ngIf="pageData">
       <li class="my__page-item pointer" [ngClass]="pageData.number == 0 ? 'disabled': ''">
-              <span  class="page-link" (click)="goToPage(0)">
+              <span class="page-link" (click)="goToPage(0)">
                 Trang Đầu
               </span>
       </li>
@@ -63,7 +82,7 @@
       <li class="my__page-item pointer d-flex justify-content-center align-items-center">
         <!--                *ngFor="let pageNumber of [].constructor(auctionPageByProductId.totalPages), let i = index">-->
         <!--                [ngClass]="auctionPageByProductId.number == i ?'actived': ''">-->
-        <span>{{(pageData.pageable.pageNumber)+1}}/{{pageData.totalPages}}</span>
+        <span>{{(pageData.pageable.pageNumber) + 1}}/{{pageData.totalPages}}</span>
         <!--              <span class="my__page-link" (click)="goToPage(i)">{{i + 1}}</span>-->
       </li>
       <li class="my__page-item pointer"
@@ -86,13 +105,13 @@
     <div class="row">
     </div>
 
-<!--    <div class="row">-->
-<!--      <div class="col-12">-->
-<!--        <div class="load-more-btn text-center">-->
-<!--          <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-12">-->
+    <!--        <div class="load-more-btn text-center">-->
+    <!--          <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
   </div>
 </div>
 <!-- ##### Buy Now Area End ##### -->
@@ -103,7 +122,9 @@
     <div class="row">
       <div class="col-12">
         <div class="adds">
-          <a href="#"><img style="width: 100%" src="https://media.molistar.com/thumb_w/editors/2022/10/21/SXvfU4upDf9esnbqPpivtCWJLHjTM1GxMHXWjVGQ_680.jpg" alt=""></a>
+          <a href="#"><img style="width: 100%"
+                           src="https://media.molistar.com/thumb_w/editors/2022/10/21/SXvfU4upDf9esnbqPpivtCWJLHjTM1GxMHXWjVGQ_680.jpg"
+                           alt=""></a>
         </div>
       </div>
     </div>
@@ -190,7 +211,8 @@
 <!-- ##### Song Area End ##### -->
 
 <!-- ##### Contact Area Start ##### -->
-<section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(assets/img/bg-img/bg-2.jpg);">
+<section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img"
+         style="background-image: url(assets/img/bg-img/bg-2.jpg);">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -224,11 +246,13 @@
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                  <textarea name="message" class="form-control" id="message" cols="30" rows="10"
+                            placeholder="Message"></textarea>
                 </div>
               </div>
               <div class="col-12 text-center">
-                <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i>
+                </button>
               </div>
             </div>
           </form>
