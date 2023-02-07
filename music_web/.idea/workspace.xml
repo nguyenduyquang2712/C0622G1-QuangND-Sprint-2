@@ -20,25 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feae098a-6318-49b8-8785-562b70237fdd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/music/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/music/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/home/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/service/album/album.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/service/album/album.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/album/AlbumRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/album/AlbumRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IOrderAlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IOrderAlbumRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IPaymentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/IAlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/IAlbumService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/impl/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/impl/AlbumService.java" afterDir="false" />
     </list>
@@ -97,7 +91,10 @@
       <workItem from="1675387604593" duration="9401000" />
       <workItem from="1675615763698" duration="3760000" />
       <workItem from="1675647201660" duration="3257000" />
-      <workItem from="1675657329690" duration="9071000" />
+      <workItem from="1675657329690" duration="9834000" />
+      <workItem from="1675692117440" duration="3783000" />
+      <workItem from="1675701366841" duration="843000" />
+      <workItem from="1675736049192" duration="15808000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Album} from "../../../model/album/album";
 import {AlbumService} from "../../../service/album/album.service";
-import {ActivatedRoute, Params} from "@angular/router";
+import {ActivatedRoute, Params, Router} from "@angular/router";
 import {User} from "../../../model/user/user";
 import {TokenService} from "../../../service/security/token.service";
 
@@ -15,12 +15,11 @@ export class DetailAlbumComponent implements OnInit {
   album: Album;
   constructor(private _tokenService: TokenService,
               private _albumService: AlbumService,
-              private _activatedRoute: ActivatedRoute) { }
+              private _activatedRoute: ActivatedRoute,
+              private _route: Router) { }
 
   ngOnInit(): void {
-    if (this._tokenService.isLogged()) {
-      this.currentUser = JSON.parse(this._tokenService.getUser());
-    }
+
     this._activatedRoute.params.subscribe((param:Params)=>{
       this._albumService.getAlbumById(param['id']).subscribe(data=>{
         this.album = data;
@@ -29,9 +28,16 @@ export class DetailAlbumComponent implements OnInit {
     })
   }
 
-  addToCart(id: number) {
-    this._albumService.addAlbumToCart(id,this.currentUser.id).subscribe(data=>{
-      console.log(data)
-    })
+  addToCart(id: number, amount:number) {
+    if (this._tokenService.isLogged()) {
+      this.currentUser = JSON.parse(this._tokenService.getUser());
+      this._albumService.addAlbumToCart(id,amount,this.currentUser.id).subscribe(data=>{
+        console.log(data)
+      })
+    }
+    else{
+      this._route.navigateByUrl('/login')
+    }
+
   }
 }

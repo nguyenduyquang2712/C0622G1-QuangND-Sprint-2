@@ -5,21 +5,32 @@
       <div class="box" *ngFor="let item of orderAlbum">
         <img src="{{item.album.images[0].urlImage}}">
         <div class="content">
-          <h3>{{item.album.title}}</h3>
-          <h4>Price: {{item.album.price}} VND</h4>
-          <p class="unit">Quantity: <input name="" value="{{item.quantity}}"></p>
-          <p class="btn-area"><i aria-hidden="true" class="fa fa-trash"></i> <span class="btn2">Remove</span></p>
+          <h3 class="content__title">{{item.album.title}}</h3>
+          <h4 class="content__price">Price: {{item.album.price}} VND</h4>
+          <div class="content__quantity">
+            <div class="content__quantity-detail">
+              <span>Quantity:</span>
+              <div class="quantity-detail__button">
+                <i (click)="subOrderAlbum(item.album.id, item.quantity,item.id)" class="fa-solid fa-minus"></i>
+                <span class="quantity-detail__number">{{item.quantity}}</span>
+                <i (click)="addOrderAlbum(item.album.id, item.quantity)" class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div (click)="removeOrderAlbum(item.id)" class="content__quantity-remove">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="right-bar">
       <p><span>Subtotal</span> <span>{{subtotal}} VND</span></p>
       <hr>
-      <p><span>Tax (5%)</span> <span>$6</span></p>
+      <p><span>Tax (5%)</span> <span>{{tax}} VND</span></p>
       <hr>
-      <p><span>Shipping</span> <span>$15</span></p>
+      <p><span>Shipping</span> <span>49000 VND</span></p>
       <hr>
-      <p><span>Total</span> <span>$141</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
+      <p><span>Total</span> <span>{{total}} VND</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
       <div style="margin-top: 50px" id="myPaypalButtons"></div>
     </div>
 

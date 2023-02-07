@@ -16,7 +16,16 @@ public interface IAlbumService {
 
     List<OrderAlbum> getOrderAlbumById(int userId);
 
-    void addOrderAlbum(Integer id, Integer paymentId);
+    void addOrderAlbum(Integer id,Integer amount, Integer paymentId);
 
     Payment findPaymentId(Integer userId);
+
+
+    OrderAlbum findOrderAlbum(Integer id, Integer paymentId);
+
+    void updateOrderAlbum(Integer id, Integer amount, Integer paymentId);
+
+    void addPayment(Integer userId);
+
+    void deleteOrderAlbum(Integer id);
 }

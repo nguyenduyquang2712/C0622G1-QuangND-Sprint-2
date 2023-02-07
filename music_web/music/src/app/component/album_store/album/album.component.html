@@ -36,19 +36,19 @@
       <!-- Single Album -->
       <div *ngFor="let item of albums" class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
         <div class="single-album">
-          <div class="single-album__adding-detail">
+          <div (mouseleave)="resetQuantity()" class="single-album__adding-detail">
             <span>Thêm vào giỏ hàng</span>
             <div class="adding-detail__quantity">
               <div class="adding-detail__quantity-detail">
-                <div class="quantity-detail__icon">
+                <div (click)="subQuantity()" class="quantity-detail__icon">
                   <i class="fa-solid fa-minus"></i>
                 </div>
-                <div class="quantity-detail__number">3</div>
-                <div class="quantity-detail__icon">
+                <div class="quantity-detail__number">{{amountAlbum}}</div>
+                <div (click)="plusQuantity()" class="quantity-detail__icon">
                   <i class="fa-solid fa-plus"></i>
                 </div>
               </div>
-              <button class="adding-detail__quantity-button">Thêm</button>
+              <button (click)="addAlbum(item.id,amountAlbum)" class="adding-detail__quantity-button">Thêm</button>
             </div>
           </div>
 

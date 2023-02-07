@@ -159,10 +159,12 @@
 
 .single-album__adding-detail:hover .adding-detail__quantity {
   display: flex;
+  cursor: default;
 }
 
 .single-album__adding-detail span {
   padding: 6px;
+  cursor: default;
 }
 
 

@@ -43,12 +43,34 @@ public class AlbumService implements IAlbumService {
     }
 
     @Override
-    public void addOrderAlbum(Integer id, Integer paymentId) {
-        orderAlbumRepository.addOrderAlbum(id, paymentId);
+    public void addOrderAlbum(Integer id,Integer amount, Integer paymentId) {
+        orderAlbumRepository.addOrderAlbum(id, amount,paymentId);
     }
 
     @Override
     public Payment findPaymentId(Integer userId) {
         return paymentRepository.findPaymentId(userId);
     }
+
+    @Override
+    public OrderAlbum findOrderAlbum(Integer id, Integer paymentId) {
+        return orderAlbumRepository.findOrderAlbumById(id, paymentId);
+    }
+
+    @Override
+    public void updateOrderAlbum(Integer id, Integer amount, Integer paymentId) {
+       orderAlbumRepository.updateOrderAlbum(id, amount, paymentId);
+    }
+
+    @Override
+    public void addPayment(Integer userId) {
+        paymentRepository.addPayment(userId);
+    }
+
+    @Override
+    public void deleteOrderAlbum(Integer id) {
+        orderAlbumRepository.deleteOrderAlbum(id);
+    }
+
+
 }

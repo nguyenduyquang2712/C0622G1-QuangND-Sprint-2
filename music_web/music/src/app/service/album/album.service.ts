@@ -7,7 +7,6 @@ import {Album} from "../../model/album/album";
   providedIn: 'root'
 })
 export class AlbumService {
-
   constructor(private _httpClient: HttpClient) {
   }
 
@@ -26,7 +25,11 @@ export class AlbumService {
 
   }
 
-  addAlbumToCart(id: number, userId: number): Observable<void> {
-    return this._httpClient.get<void>('http://localhost:8080/api/v1/music/add/?id='+id+'&userId='+userId);
+  addAlbumToCart(id: number,amount:number, userId: number): Observable<void> {
+    return this._httpClient.get<void>('http://localhost:8080/api/v1/music/add?id='+id+'&amount='+amount+'&userId='+userId);
+  }
+
+  removeOrderAlbum(id: number): Observable<void> {
+    return this._httpClient.delete<void>('http://localhost:8080/api/v1/music/deleteOderAlbum/'+id)
   }
 }
