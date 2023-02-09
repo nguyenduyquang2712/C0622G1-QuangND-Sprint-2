@@ -1,0 +1,56 @@
+<div class="my-container">
+  <div class="checkout-information">
+    <h3 class="checkout-information__header">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Địa chỉ nhận hàng</span>
+    </h3>
+    <div class="checkout-information__body">
+      <div class="checkout-information__body-name">{{currentUser.firstName}} {{currentUser.lastName}}</div>
+      <div class="checkout-information__body-phone">{{currentUser.phoneNumber}}</div>
+      <div class="checkout-information__body-address">{{currentUser.street}},{{currentUser.city}}</div>
+    </div>
+  </div>
+  <div class="checkout-payment">
+    <div class="checkout-payment__header">
+      <h3 class="checkout-payment__header-title">Phương thức thanh toán</h3>
+      <button (click)="renderPaypal()" class="checkout-payment__header-method" >
+        <i  class="fa-brands fa-paypal"></i>
+        Paypal
+      </button>
+      <button class="checkout-payment__header-method">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        MasterCard
+      </button>
+      <button class="checkout-payment__header-method">
+        <i class="fa-brands fa-cc-visa"></i>
+        Visa
+      </button>
+      <button class="checkout-payment__header-method">
+        <i class="fa-solid fa-truck"></i>
+        Thanh toán khi nhận hàng
+      </button>
+    </div>
+    <div class="checkout-payment__body">
+      <div class="checkout-payment__body-method">
+        <div style="margin-top: 50px; width: 50%" id="myPaypalButtons"></div>
+      </div>
+      <div class="checkout-payment__body-detail">
+        <div class="body-detail__total-money">
+          <span>Tổng tiền hàng: </span>
+          <span>{{this.subtotal}}</span>
+        </div>
+        <div class="body-detail__total-ship-cost">
+          <span>Phí giao hàng: </span>
+          <span>49000</span>
+        </div>
+        <div class="body-detail__total-pay">
+          <span>Tổng tiền: </span>
+          <span>{{total}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-payment__footer">
+      <span>Nhấn vào nút thanh toán đồng nghĩa với việc bạn đồng ý với điều khoản của chúng tôi</span>
+    </div>
+  </div>
+</div>

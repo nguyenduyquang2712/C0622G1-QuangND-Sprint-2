@@ -1,0 +1,28 @@
+<div style="margin-top: 10%; min-height: 400px">
+  <div>
+    <div>
+<!--      <ng-template #pageAuctionIsEmpty>-->
+<!--        <p class="nothing-auction">Chưa có đấu giá nào</p>-->
+<!--      </ng-template>-->
+      <table class="table" style="font-size: 14px">
+        <thead class="table-light">
+        <tr class="border-top">
+          <th>Number</th>
+          <th>Totol Price</th>
+          <th class="text-center">Order Date</th>
+          <th>Trang thai</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of paidpayment, let i = index">
+          <td>{{i+1}}</td>
+          <td class="">{{item.totalPrice|currency}}</td>
+          <td class="text-center">{{item.orderDate}}</td>
+          <td>M{{item.id}}</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>

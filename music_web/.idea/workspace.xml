@@ -20,21 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feae098a-6318-49b8-8785-562b70237fdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/album/album.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/detail-album/detail-album.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/component/album_store/payment-cart/payment-cart.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/src/app/service/album/album.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/music/src/app/service/album/album.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/album/AlbumRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/album/AlbumRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/payment/PaymentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/controller/payment/PaymentRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IOrderAlbumRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IOrderAlbumRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/IAlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/IAlbumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/impl/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/album/impl/AlbumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IPaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/repository/payment/IPaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/payment/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/payment/IPaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/payment/impl/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../music_web_api/src/main/java/com/codegym/service/payment/impl/PaymentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +91,11 @@
       <workItem from="1675692117440" duration="3783000" />
       <workItem from="1675701366841" duration="843000" />
       <workItem from="1675736049192" duration="15808000" />
+      <workItem from="1675775898479" duration="7095000" />
+      <workItem from="1675823622997" duration="13895000" />
+      <workItem from="1675855045305" duration="12422000" />
+      <workItem from="1675873845651" duration="2209000" />
+      <workItem from="1675876777540" duration="504000" />
     </task>
     <servers />
   </component>
@@ -114,6 +115,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser" timestamp="1675779034453">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.689@0.0.1280.689" timestamp="1675779034453" />
     <state x="310" y="124" key="EditFileWatcherDialog" timestamp="1673177731426">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -130,9 +135,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="153" width="672" height="677" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1675648969515" />
-    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1673410793833">
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1675864944679">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1673410793833" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1675864944679" />
   </component>
 </project>

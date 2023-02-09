@@ -14,7 +14,8 @@ import { LoginComponent } from './component/login/login/login.component';
 import {HttpClientModule} from "@angular/common/http";
 import { UserComponent } from './component/user/user/user.component';
 import { PlayListComponent } from './component/user/play-list/play-list.component';
-
+import { CheckoutComponent } from './component/payment/checkout/checkout.component';
+import { HistoryPaymentComponent } from './component/payment/history-payment/history-payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,9 @@ import { PlayListComponent } from './component/user/play-list/play-list.componen
     PaymentCartComponent,
     LoginComponent,
     UserComponent,
-    PlayListComponent
+    PlayListComponent,
+    CheckoutComponent,
+    HistoryPaymentComponent
   ],
   imports: [
     BrowserModule,

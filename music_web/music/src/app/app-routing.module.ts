@@ -8,6 +8,8 @@ import {UserComponent} from "./component/user/user/user.component";
 import {AdminGuard} from "./security/guard/admin.guard";
 import {UserGuard} from "./security/guard/user.guard";
 import {DetailAlbumComponent} from "./component/album_store/detail-album/detail-album.component";
+import {CheckoutComponent} from "./component/payment/checkout/checkout.component";
+import {HistoryPaymentComponent} from "./component/payment/history-payment/history-payment.component";
 
 
 const routes: Routes = [
@@ -31,6 +33,12 @@ const routes: Routes = [
   },
   {
     path:'detail/:id', component:DetailAlbumComponent
+  },
+  {
+    path:'checkout/:id', component: CheckoutComponent, canActivate: [UserGuard]
+  },
+  {
+    path:'history', component: HistoryPaymentComponent, canActivate:[UserGuard]
   }
 ];
 

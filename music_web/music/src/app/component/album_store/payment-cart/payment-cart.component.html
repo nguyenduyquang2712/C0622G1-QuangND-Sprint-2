@@ -1,6 +1,6 @@
 <div style="margin-top: 80px; margin-bottom: 50px" class="wrapper">
   <h1>Music Cart</h1>
-  <div class="project">
+  <div *ngIf="checkCart" class="project">
     <div class="shop">
       <div class="box" *ngFor="let item of orderAlbum">
         <img src="{{item.album.images[0].urlImage}}">
@@ -30,10 +30,16 @@
       <hr>
       <p><span>Shipping</span> <span>49000 VND</span></p>
       <hr>
-      <p><span>Total</span> <span>{{total}} VND</span></p><a href="#"><i class="fa fa-shopping-cart"></i>Checkout</a>
-      <div style="margin-top: 50px" id="myPaypalButtons"></div>
+      <p><span>Total</span> <span>{{total}} VND</span></p>
+      <a [routerLink]="['/checkout',currentPaymentID]">
+      <i class="fa fa-shopping-cart"></i>
+        Checkout
+      </a>
     </div>
 
+  </div>
+  <div *ngIf="!checkCart" style="text-align: center">
+    <img src="https://bizweb.dktcdn.net/100/320/202/themes/714916/assets/empty-cart.png?1650292912948">
   </div>
 </div>
 

@@ -1,0 +1,142 @@
+.my-container {
+  width: 100%;
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #cecece;
+}
+
+.checkout-information {
+  margin-top: 30px;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 21px;
+  border-radius: 3px;
+  margin-bottom: 21px;
+}
+
+.checkout-information__body {
+  display: flex;
+}
+
+.checkout-information__header {
+  color: #cb5e5e;
+}
+
+.checkout-information__header i {
+  margin-right: 9px;
+}
+
+.checkout-information__body {
+  color: #363636;
+}
+
+.checkout-information__body-name,
+.checkout-information__body-phone {
+  font-size: 21px;
+  font-weight: 500;
+  display: flex;
+  align-items: end;
+}
+
+.checkout-information__body-phone {
+  margin-left: 9px;
+}
+
+
+.checkout-information__body-address {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: end;
+  position: relative;
+  bottom: 1px;
+  margin-left: 12px;
+}
+
+.checkout-payment {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.checkout-payment__header-title {
+  margin-right: 12px;
+  color: #cb5e5e;
+  position: relative;
+  top: 3px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.checkout-payment__header-method + .checkout-payment__header-method {
+  margin-left: 9px;
+}
+
+.checkout-payment__header-method {
+  padding: 3px 12px;
+  border-radius: 3px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.checkout-payment__header-method:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.checkout-payment__header {
+  display: flex;
+  align-items: center;
+}
+
+.checkout-payment__body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(47, 47, 149, 0.22);
+  padding: 9px 0;
+  margin: 12px 0;
+}
+
+.checkout-payment__body-detail {
+  width: 24%;
+  font-size: 18px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.checkout-payment__body-method {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.body-detail__total-money span:first-child {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.body-detail__total-ship-cost span:first-child {
+  font-size: 15px;
+  margin-right: 14px;
+}
+
+.body-detail__total-pay span:first-child {
+  font-size: 21px;
+  margin-right: 14px;
+}
+
+.checkout-payment__footer {
+  font-size: 15px;
+  color: rgba(54, 54, 54, 0.57);
+}

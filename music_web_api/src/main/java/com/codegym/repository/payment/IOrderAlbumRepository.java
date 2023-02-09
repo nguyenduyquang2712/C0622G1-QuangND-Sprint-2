@@ -17,7 +17,7 @@ public interface IOrderAlbumRepository extends JpaRepository<OrderAlbum, Integer
     @Query(value = "SELECT  order_album.* FROM order_album " +
             "join payment on order_album.payment_id= payment.id \n" +
             "join `user` on `user`.id=payment.user_id" +
-            " where `user`.id =:userId and order_album.delete_status=0", nativeQuery = true)
+            " where `user`.id =:userId and order_album.delete_status=0 and payment.payment_status=0", nativeQuery = true)
     List<OrderAlbum> getOrderAlbumById(@Param("userId") int userId);
 
     @Modifying
